@@ -1,5 +1,5 @@
 {
-  "name": "ngx-zippy-component-render-modules",
+  "name": "ngx-zippy-feature-render-modules",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

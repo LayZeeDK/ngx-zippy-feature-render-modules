@@ -1,9 +1,4 @@
-import {
-  Component,
-  Input,
-  NgModule,
-  ɵmarkDirty as markDirty,
-} from '@angular/core';
+import { Component, Input, ɵmarkDirty as markDirty } from '@angular/core';
 
 import { ButtonDirective } from './button.directive';
 
@@ -31,10 +26,7 @@ export class ZippyComponent {
   }
 }
 
-@NgModule({
-  declarations: [
-    ZippyComponent,
-    ButtonDirective,
-  ],
-})
-class ZippyRenderModule {}
+export const zippyDeps = [
+  ZippyComponent,
+  ButtonDirective,
+];

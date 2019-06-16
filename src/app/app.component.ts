@@ -1,7 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 
 import { CapitalizePipe } from './capitalize.pipe';
-import { ZippyComponent } from './zippy.component';
+import { zippyDeps } from './zippy.component';
 
 @Component({
   selector: 'app-root',
@@ -12,14 +12,14 @@ import { ZippyComponent } from './zippy.component';
   `,
 })
 export class AppComponent {
-  title = 'component render modules';
+  title = 'feature render modules';
 }
 
 @NgModule({
   declarations: [
     AppComponent,
     CapitalizePipe,
-    ZippyComponent,
+    zippyDeps,
   ],
 })
 class AppRenderModule {}
